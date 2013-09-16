@@ -1,0 +1,23 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div class="jumbotron">
+  <div class="container">
+    <h2>Minnesota Society of Pathologists<br/><span class="glyphicon glyphicon-leaf"></span> 2013 Annual Fall Seminar <span class="glyphicon glyphicon-leaf"></span></h2>
+    <p>...</p>
+    <p>Sponsored by the Department of Laboratory Medicine and Pathology, the Minnesota Society of Pathologists, and the College of American Pathologists</p>
+  </div>
+</div>
+
+<div id="home">
+  <h1>Digital Slides and Clinical Histories</h1>
+  <ul class="posts">
+    {% for page in site.pages %}
+      {% if page.layout == 'case' %}
+      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
