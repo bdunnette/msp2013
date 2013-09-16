@@ -6,19 +6,19 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="/css/leaflet.css" />
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/leaflet.css" />
         <!--[if lte IE 8]>
-            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+            <link rel="stylesheet" href="{{ site.baseurl }}/css/leaflet.ie.css" />
         <![endif]-->
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-        <script src="/js/leaflet.js"></script>
+        <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+        <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+        <script src="{{ site.baseurl }}/js/leaflet.js"></script>
 
         
     </head>
@@ -35,11 +35,11 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li><a href="/seminar-info.html">Seminar Info</a></li>
+            <li><a href="{{ site.baseurl }}/seminar-info.html">Seminar Info</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Cases <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="themes">
-                <li><a tabindex="-1" href="../default/">Case 1</a></li>
+                <li><a tabindex="-1" href="{{ site.baseurl }}/cases/01.html">Case 1</a></li>
               </ul>
             </li>
           </ul>
