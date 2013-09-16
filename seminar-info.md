@@ -11,7 +11,7 @@ Mayo Memorial Auditorium
 
 Minneapolis, MN 55455
 
-[Interactive Map](http://campusmaps.umn.edu/tc/map.php?building=2|074)
+[<i class="icon-globe"></i> Interactive Map](http://campusmaps.umn.edu/tc/map.php?building=074)
 
 ## Course Faculty
 
