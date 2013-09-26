@@ -13,9 +13,9 @@ Minneapolis, MN 55455
 
 [<i class="icon-globe"></i> Interactive Map](http://campusmaps.umn.edu/tc/map.php?building=074)
 
-## Course Faculty
+### Course Faculty
 
-## Program Agenda
+### Program Agenda
 - 8:00 a.m. Registration and Continental Breakfast
 - 8:30 a.m. Case Review and Discussion of Slides
 - 10:00 a.m. Break
@@ -28,7 +28,7 @@ Minneapolis, MN 55455
 - 3:15 p.m. Case Review and Discussion of Slides
 - 4:45 p.m. Adjournment
 
-## Educational Objectives
+### Educational Objectives
 For both the 37th E.T. Bell Fall Pathology Symposium (Nov 1<sup>st</sup>), and the MSP Annual Fall Seminar (Nov 2<sup>nd</sup>)
 
 At the conclusion of the conference, participants should be able to:

@@ -5,3 +5,14 @@ layout: default
 <div class="post">
 {{ content }}
 </div>
+
+<div id="map" style="width: 800px; height: 600px"></div>
+
+<script>
+		var map = L.map('map').setView([0, 0], 4);
+
+		L.tileLayer('{{site.baseurl}}/slides/{{page.slide_id}}/tile_{z}_{x}_{y}.jpg', {
+			maxZoom: '{{page.maxzoom}}',
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+		}).addTo(map);
+</script>
