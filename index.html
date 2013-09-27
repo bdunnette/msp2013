@@ -8,6 +8,8 @@ title: Your New Jekyll Site
     <h2>Minnesota Society of Pathologists<br/>2013 Annual Fall Seminar</h2>
     <p>...</p>
     <p>Sponsored by the Department of Laboratory Medicine and Pathology, the Minnesota Society of Pathologists, and the College of American Pathologists</p>
+    <img width="200px"  src="images/msp_logo_refresh.png"/>
+    <img width="120px"  src="images/cap_logo.png"/>
   </div>
 </div>
 
@@ -16,7 +18,7 @@ title: Your New Jekyll Site
   <ul class="posts">
     {% for page in site.pages %}
       {% if page.layout == 'case' %}
-      <li><a href="{{ page.url }}">{{ page.title }}: {{ page.content|truncatewords: 8 }}</a></li>
+      <li><a href="{{ site.baseurl}}{{ page.url }}">{{ page.title }}: {{ page.content|truncatewords: 8 }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

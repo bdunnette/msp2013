@@ -2,4 +2,3 @@ name: MSP 2013 Fall Seminar
 markdown: redcarpet
 pygments: true
 baseurl: /bell2013
-excerpt_separator: ,
