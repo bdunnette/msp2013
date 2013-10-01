@@ -14,11 +14,25 @@ layout: default
     {% assign slide_author = "their creators" %}
 {% endif %}
 
-<script>
-		var map = L.map('map').setView([0, 0], 4);
+{% if page.start_zoom %}
+    {% assign start_zoom = page.start_zoom %}
+{% else %}
+    {% assign start_zoom = 10 %}
+{% endif %}
 
-		L.tileLayer('{{site.baseurl}}/slides/{{page.slide_id}}/tile_{z}_{x}_{y}.jpg', {
-			maxZoom: '{{page.maxzoom}}',
+{% if page.max_zoom %}
+    {% assign max_zoom = page.max_zoom %}
+{% else %}
+    {% assign max_zoom = 14 %}
+{% endif %}
+
+
+<script>
+
+		var map = L.map('map').setView([85,-179.5], {{start_zoom}});
+
+		L.tileLayer('{{site.baseurl}}/slides/{{page.slide_id}}_files/{z}/{x}_{y}.jpeg', {
+			maxZoom: '{{page.max_zoom}}',
 			attribution: 'Images &copy; {{slide_author}}; All Rights Reserved.'
 		}).addTo(map);
 </script>
