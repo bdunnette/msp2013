@@ -31,7 +31,7 @@ layout: default
 
 		var map = L.map('map').setView([85,-179.5], {{start_zoom}});
 
-		L.tileLayer('{{site.baseurl}}/slides/{{page.slide_id}}_files/{z}/{x}_{y}.jpeg', {
+		L.tileLayer('/_slides/{{page.slide_id}}/{z}/{x}_{y}.jpeg', {
 			maxZoom: '{{page.max_zoom}}',
 			attribution: 'Images &copy; {{slide_author}}; All Rights Reserved.'
 		}).addTo(map);
