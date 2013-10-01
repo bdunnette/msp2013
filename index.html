@@ -16,7 +16,8 @@ title: Your New Jekyll Site
 <div id="home">
   <h3>Digital Slides and Clinical Histories</h3>
   <ul class="posts">
-    {% for page in site.pages %}
+    {% assign sorted_pages = site.pages | sort:"title" %}
+    {% for page in sorted_pages %}
       {% if page.layout == 'case' %}
       <li><a href="{{ site.baseurl}}{{ page.url }}">{{ page.title }}: {{ page.content|truncatewords: 8 }}</a></li>
       {% endif %}
