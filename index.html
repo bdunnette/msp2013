@@ -19,7 +19,7 @@ title: Your New Jekyll Site
     {% assign sorted_pages = site.pages | sort:"title" %}
     {% for page in sorted_pages %}
       {% if page.layout == 'case' %}
-      <li><a href="{{ site.baseurl}}{{ page.url }}">{{ page.title }}: {{ page.content|truncatewords: 8 }}</a></li>
+      <li><a href="./{{ page.url }}">{{ page.title }}: {{ page.content|truncatewords: 8 }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

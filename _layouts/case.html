@@ -1,5 +1,6 @@
 ---
 layout: default
+root: "../"
 ---
 <h2>{{ page.title }}</h2>
 <div class="post">
@@ -26,13 +27,33 @@ layout: default
     {% assign max_zoom = 14 %}
 {% endif %}
 
+{% if page.startx %}
+    {% assign startx = page.startx %}
+{% else %}
+    {% assign startx = -179.5 %}
+{% endif %}
+
+{% if page.starty %}
+    {% assign starty = page.starty %}
+{% else %}
+    {% assign starty = 85 %}
+{% endif %}
 
 <script>
 
-		var map = L.map('map').setView([85,-179.5], {{start_zoom}});
+		var map = L.map('map', {
+            //crs: L.CRS.Simple
+        }).setView([{{starty}},{{startx}}], {{start_zoom}});
 
-		L.tileLayer('/_slides/{{page.slide_id}}/{z}/{x}_{y}.jpeg', {
-			maxZoom: '{{page.max_zoom}}',
-			attribution: 'Images &copy; {{slide_author}}; All Rights Reserved.'
+		L.tileLayer('//localhost/_slides/{{page.slide_id}}/{z}/{x}_{y}.jpeg', {
+            attribution: 'Images &copy; {{slide_author}}; All Rights Reserved.',
+            maxZoom: '{{max_zoom}}',
+            noWrap: true,
+            errorTileURL: '//localhost/_slides/blank.jpeg'
 		}).addTo(map);
+    
+        function onMapMove(e) { console.log('Center:' + map.getCenter() + ' Zoom:' + map.getZoom()); }
+    
+        map.on('moveend', onMapMove);
+    
 </script>
