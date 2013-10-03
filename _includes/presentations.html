@@ -1,0 +1,4 @@
+{% assign sorted_presentations = site.posts | sort: "date" %}
+{% for presentation in sorted_presentations %}
+- {{presentation.date|date: "%I:%M"}}: {{presentation.title}} {% if presentation.author %}- _{{presentation.author}}_{% endif %}
+{% endfor %}
