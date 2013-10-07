@@ -8,7 +8,7 @@ title: Your New Jekyll Site
     <h2>Minnesota Society of Pathologists 2013 Annual Fall Seminar</h2>
     <h3>New and Emerging Molecular Technology</h3>
     <p><em>and</em></p>
-    <h3>The Minnesota Society of Pathologists' Annual Slide Seminar:<br /> Survey of Diagnostics Technology</h3>
+    <h3>The Minnesota Society of Pathologists' Annual Slide Seminar:<br />Survey of Diagnostics Technology</h3>
     <p>Sponsored by the Department of Laboratory Medicine and Pathology, the Minnesota Society of Pathologists, and the College of American Pathologists</p>
     <img width="200px"  src="images/msp_logo_refresh.png"/>
     <img width="120px"  src="images/cap_logo.png"/>
@@ -21,7 +21,8 @@ title: Your New Jekyll Site
     {% assign sorted_pages = site.pages | sort:"title" %}
     {% for page in sorted_pages %}
       {% if page.layout == 'case' %}
-      <li><a href="./{{ page.url }}">{{ page.title }}: {{ page.content|truncatewords: 8 }}</a></li>
+      <!-- Since all of the pages are in the same directory, just put a "." in front of each page's URL -->
+      <li><a href=".{{ page.url }}">{{ page.title }}:&nbsp;{{ page.content|truncatewords: 8 }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

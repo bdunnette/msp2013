@@ -2,6 +2,9 @@
 layout: case
 title: Case 4
 slide_id: case4
+start_zoom: 11
+startx: -179.56
+starty: 85.02
 max_zoom: 15
 author: Allen M. Gown, MD
 ---

@@ -5,7 +5,7 @@ title: MSP 2013 Fall Seminar
 
 ## Seminar Information
 
-<span class="pull-right" style="text-align: center;"><a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=301+19th+Avenue+S,+Minneapolis,+MN+55455&sll=44.973133,-93.245868&sspn=0.007711,0.019248&ie=UTF8&hq=&hnear=301+19th+Ave+S,+Minneapolis,+Hennepin,+Minnesota+55455&ll=44.971645,-93.245709&spn=0.007712,0.019248&z=16">Humphrey Center - Click for Directions<br/>![Humphrey Institute](images/humphrey.gif "Humphrey Center (click for directions)")</a></span>
+<span class="pull-right" style="text-align: center;"><a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=301+19th+Avenue+S,+Minneapolis,+MN+55455&sll=44.973133,-93.245868&sspn=0.007711,0.019248&ie=UTF8&hq=&hnear=301+19th+Ave+S,+Minneapolis,+Hennepin,+Minnesota+55455&ll=44.971645,-93.245709&spn=0.007712,0.019248&z=16" target="_blank">Humphrey Center - Click for Directions<br/>![Humphrey Institute](images/humphrey.gif "Humphrey Center (click for directions)")</a></span>
 
 November 2nd, 2013
 

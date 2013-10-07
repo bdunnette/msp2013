@@ -2,6 +2,9 @@
 layout: case
 title: Case 7
 slide_id: case7
+start_zoom: 11
+startx: -179.56
+starty: 85.01
 max_zoom: 15
 author: Allen M. Gown, MD
 patient:
