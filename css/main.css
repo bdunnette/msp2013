@@ -7,5 +7,9 @@ body {
 }
 
 h4, h5, .h5, .h6 {
-    color: #18bc9c
+    color: #18bc9c;
+}
+
+.jumbotron .container img {
+    margin: 20px;
 }
