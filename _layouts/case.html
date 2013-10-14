@@ -40,16 +40,23 @@ layout: default
 
 <script>
 
-		var map = L.map('map', {
-            //crs: L.CRS.Simple
-        }).setView([{{starty}},{{startx}}], {{start_zoom}});
-
-		L.tileLayer('_slides/{{page.slide_id}}/{z}/{x}_{y}.jpeg', {
+		var map = new L.map('map');
+        
+        var slideUrl = '_slides/{{page.slide_id}}/{z}/{x}_{y}.jpeg'
+    
+		slide = L.tileLayer(slideUrl, {
             attribution: 'Images &copy; {{slide_author}}; All Rights Reserved.',
+            minZoom: 10,
             maxZoom: '{{max_zoom}}',
             noWrap: true,
             errorTileURL: '_slides/blank.jpeg'
-		}).addTo(map);
+		});
+    
+        map.addLayer(slide);
+        map.setView(new L.LatLng({{starty}},{{startx}}), {{start_zoom}});
+        
+        var slide2 = new L.TileLayer(slideUrl, {minZoom: 5, maxZoom: 10});
+        var miniMap = new L.Control.MiniMap(slide2, { toggleDisplay: true }).addTo(map);
     
         function onMapMove(e) { console.log('Center:' + map.getCenter() + ' Zoom:' + map.getZoom()); }
     
