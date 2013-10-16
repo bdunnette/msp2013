@@ -10,21 +10,24 @@ title: MSP 2013 Fall Seminar
     <p><em>and</em></p>
     <h3>The Minnesota Society of Pathologists' Annual Slide Seminar:<br />Survey of Diagnostics Technology</h3>
     <p>Sponsored by the Department of Laboratory Medicine and Pathology, the Minnesota Society of Pathologists, and the College of American Pathologists</p>
-    <img width="250px"  src="images/msp_logo.png"/>
-    <img width="275px"  src="images/lmp_logo.png"/>
-    <img width="154px"  src="images/cap_logo.png"/>
+    <a href="http://mnsocietypathorg.homestead.com" target="_blank"><img width="250px"  src="images/msp_logo.png"/></a>
+    <a href="http://pathology.umn.edu" target="_blank"><img width="275px"  src="images/lmp_logo.png"/></a>
+    <a href="http://cap.org" target="_blank"><img width="154px"  src="images/cap_logo.png"/></a>
   </div>
 </div>
 
-<div id="home">
+<div id="home" class="container">
+    <div class="row">
+        <div class="col-md-12">
   <h3>Digital Slides and Clinical Histories</h3>
-  <ul class="posts">
     {% assign sorted_pages = site.pages | sort:"title" %}
+            <ol>
     {% for page in sorted_pages %}
       {% if page.layout == 'case' %}
       <!-- Since all of the pages are in the same directory, just put a "." in front of each page's URL -->
-      <li><a href=".{{ page.url }}">{{ page.title }}:&nbsp;{{ page.content|truncatewords: 8 }}</a></li>
+      <li><a href=".{{ page.url }}">{{ page.content }}</a></li>
       {% endif %}
     {% endfor %}
-  </ul>
+            </ol>
+    </div>
 </div>

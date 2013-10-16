@@ -1,0 +1,10 @@
+html, body, #map {
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+
+.legend {
+    width: 30%;
+    min-width: 110px;
+}

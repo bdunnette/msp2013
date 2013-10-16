@@ -1,14 +1,13 @@
----
-layout: default
----
-<h2>{{ page.title }}</h2>
-<div class="post">
-{{ content }}
-</div>
-
-<div id="map" style="width: 100%; height: 800px"></div>
-
-{% if page.author %}
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include site-head.html %}
+        {% include case-head.html %}
+    </head>
+    
+    <body>
+        {% include navbar.html %}
+        {% if page.author %}
     {% assign slide_author = page.author %}
 {% else %}
     {% assign slide_author = "their creators" %}
@@ -38,6 +37,8 @@ layout: default
     {% assign starty = 85 %}
 {% endif %}
 
+<div id="map"></div>
+
 <script>
 
 		var map = new L.map('map');
@@ -47,19 +48,52 @@ layout: default
 		slide = L.tileLayer(slideUrl, {
             attribution: 'Images &copy; {{slide_author}}; All Rights Reserved.',
             minZoom: 10,
-            maxZoom: '{{max_zoom}}',
+            maxZoom: {{max_zoom}},
             noWrap: true,
             errorTileURL: '_slides/blank.jpeg'
 		});
     
         map.addLayer(slide);
         map.setView(new L.LatLng({{starty}},{{startx}}), {{start_zoom}});
-        
-        var slide2 = new L.TileLayer(slideUrl, {minZoom: 5, maxZoom: 10});
-        var miniMap = new L.Control.MiniMap(slide2, { toggleDisplay: true }).addTo(map);
     
-        function onMapMove(e) { console.log('Center:' + map.getCenter() + ' Zoom:' + map.getZoom()); }
+        var legend = L.control({position: 'bottomleft'});
+
+        legend.onAdd = function (map) {
+            var div = L.DomUtil.create('div', 'alert alert-info legend');
+            div.innerHTML += '<button class="btn btn-primary" data-toggle="collapse" data-target="#description">{{page.title}}</button>'
+            div.innerHTML += '<div id="description" class="panel-collapse collapse in">{{ content | strip_newlines }}</div>';
+            return div;
+        };
+
+        legend.addTo(map);
+        
+        var slide2 = new L.TileLayer(slideUrl, {minZoom: 10, maxZoom: 10});
+        var miniMap = new L.Control.MiniMap(slide2, { position: 'topright', toggleDisplay: true, autoToggleDisplay: true }).addTo(map);
+    
+        function onMapMove(e) { 
+            console.log('Center:' + map.getCenter() + ' Zoom:' + map.getZoom()); 
+        }
     
         map.on('moveend', onMapMove);
     
+        // global vars
+        var winHeight = $(window).height();
+
+        // set initial div height / width
+        $('#map').css({
+            'height': winHeight - 60,
+        });
+        
+        // make sure div stays full width/height on resize
+        $(window).resize(function(){
+            var winHeight = $(window).height();
+            $('#map').css({
+                'height': winHeight - 60,
+            });
+        });
+    
 </script>
+
+    </body>
+</html>
+

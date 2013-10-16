@@ -17,99 +17,37 @@ Minneapolis, MN 55455
 
 ### Program Agenda
 
-{% include presentations.html %}
-
-### Course Director and Moderator
-
-<h4>Jon H. Ritter, MD</h4>
-Professor of Laboratory Medicine and Pathology<br/>
-Director of Anatomic Pathology<br/>
-University of Minnesota<br/>
-Minneapolis, MN
+- **7:30 AM:** Registration and Continental Breakfast
+- **8:00 AM:** Case Review and Discussion of Slides 
+- **9:30 AM:** Break
+- **10:00 AM:** Case Review and Discussion of Slides 
+- **12:00 PM:** Business Meeting and Lunch 
+  - Financial Update 
+  - Membership Update 
+  - Announcement of the Distinguished Pathologist's Award Recipient: David Blomberg, MD
+- **1:00 PM:** Case Review and Discussion of Slides 
+- **2:30 PM:** Adjournment 
 
 ### Course Faculty
 
-<div class="row">
-<div class="col-md-4">
-<h4>Sophie L. Arbefeville, PhD</h4>
-Assistant Professor<br/>
-Department of Laboratory Medicine and Pathology<br/>
-University of Minnesota<br/>
-Minneapolis, MN 
-</div>
-
-<div class="col-md-4">
-<h4>Michelle Dolan, MD</h4>
-Associate Professor<br/>
-Department of Laboratory Medicine and Pathology<br/>
-University of Minnesota<br/>
-Minneapolis, MN
-</div>
-
-<div class="col-md-4">
-<h4>Allen M. Gown, MD</h4>
+<h4><a href="http://phenopath.com/#/medical-staff" target="_blank">Allen M. Gown, MD</a></h4>
 Medical Director and Chief Pathologist<br/>
 PhenoPath Laboratories<br/>
 Seattle, Washington<br/><br/>
 Clinical Professor of Pathology<br/>
 University of British Columbia<br/>
 Vancouver, BC 
-</div>
-</div>
 
-<div class="row">
-<div class="col-md-4">
-<h4>Betsy Hirsch, PhD</h4>
-Associate Professor<br/>
-Department of Laboratory Medicine and Pathology<br/>
-University of Minnesota<br/>
-Minneapolis, MN 
-</div>
+### Moderator
 
-<div class="col-md-4">
-<h4>Hannah Krigman, MD</h4>
-Associate Professor<br/>
-Department of Laboratory Medicine and Pathology<br/>
+<h4><a href="http://www.med.umn.edu/pathology/about/faculty/ritter/home.html" target="_blank">Jon H. Ritter, MD</a></h4>
+Professor of Laboratory Medicine and Pathology<br/>
+Director of Anatomic Pathology<br/>
 University of Minnesota<br/>
 Minneapolis, MN
-</div>
-
-<div class="col-md-4">
-<h4>Andrew Nelson, MD</h4>
-Molecular Pathology Fellow<br/>
-Department of Laboratory Medicine and Pathology<br/>
-University of Minnesota<br/>
-Minneapolis, MN
-</div>
-</div>
-
-<div class="row">
-<div class="col-md-4">
-<h4>Bharat Thyagarajan, MD</h4>
-Assistant Professor<br/>
-Department of Laboratory Medicine and Pathology<br/>
-University of Minnesota<br/>
-Minneapolis, MN
-</div>
-
-<div class="col-md-4">
-<h4>Jon Wilson, MD</h4>
-Associate Professor<br/>
-Department of Laboratory Medicine and Pathology<br/>
-University of Minnesota<br/>
-Minneapolis, MN
-</div>
-
-<div class="col-md-4">
-<h4>Sophia Yohe, MD</h4>
-Assistant Professor<br/>
-Department of Laboratory Medicine and Pathology<br/>
-University of Minnesota<br/>
-Minneapolis, MN
-</div>
-</div>
 
 ### Educational Objectives
+
 At the conclusion of the conference, participants should be able to:
 
 1. Explain changes in methodology and practice that are taking place in cytogenetics. 
