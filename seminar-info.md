@@ -68,3 +68,11 @@ and infectious disease.
 8. Understand how immunohistochemistry can be employed to detect chromosomal translocations that are specific for certain malignancies, e.g. alveolar soft part sarcoma.
 
 9. Recognize how immnohistochemistry can be integrated with fluorescence in situ hybridation to detect the presence of ALK alterations in lung adenocarcinoma.
+
+### Accreditation
+
+*AMA Credit Designation Statement*
+
+This activity has been planned and implemented in accordance with the Essential Areas and Policies of the Accreditation Council for Continuing Medical Education through the joint sponsorship of the Minnesota Medical Association and Minnesota Society of Pathologists. The Minnesota Medical Association (MMA) is accredited by the Accreditation Council for Continuing Medical Education to provide continuing medical education for physicians.
+
+The Minnesota Medical Association designates this live event for a maximum of 11.25 AMA PRA Category 1 Credit(s)™. Physicians should claim only the credit commensurate with the extent of their participation in the activity.
